@@ -1,0 +1,21 @@
+package calculator;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+class TestEntry {
+  private Entry first = new Entry(3.0f);
+  private Entry second = new Entry(Symbol.PLUS);
+  private Entry third = new Entry("cat");
+
+  @Test // Test 1
+  // Changed all constructors to account for the type of entry
+  void test() {
+    // Testing to see if the constructors are called correctly
+    assertEquals(first.getType(), Type.NUMBER);
+    assertEquals(second.getType(), Type.SYMBOL);
+    assertEquals(third.getType(), Type.STRING);
+  }
+
+}
