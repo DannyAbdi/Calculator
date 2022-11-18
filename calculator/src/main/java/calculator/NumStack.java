@@ -1,7 +1,9 @@
 package calculator;
 
+import java.util.EmptyStackException;
+
 /**
- * This program creates a stack and can add and remove entries.
+ * This program creates a stack of floats and can add and remove entries.
  * 
  * @author danny
  *
@@ -11,7 +13,6 @@ public class NumStack {
 
   /**
    * Constructor for the NumStack class that creates an empty stack.
-   * 
    */
   public NumStack() {
     numStack = new Stack();
@@ -27,12 +28,16 @@ public class NumStack {
   }
 
   /**
-   * Removes the last element in the stack and returns it. stack is empty.
+   * Removes the last element in the stack and returns it.
    * 
    * @return Last element in the stack.
    * @throws BadTypeException If the value is not a number.
+   * @throws EmptyStackException If the stack is empty.
    */
   public float pop() throws BadTypeException {
+    if (numStack.size() == 0) {
+      throw new EmptyStackException();
+    }
     return numStack.pop().getValue();
   }
 
