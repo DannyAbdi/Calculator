@@ -14,7 +14,7 @@ public class RevPolishCalc {
       throw new InvalidExpressionException("Cannot evaulate an empty string.");
     } else if (what.contains("(") || what.contains(")")) {
       throw new InvalidExpressionException("Invalid format.");
-    } else if (what.length() < 3) {
+    } else if (elements.length < 3) {
       throw new InvalidExpressionException("Expression is too short to evaluate.");
     }
 
