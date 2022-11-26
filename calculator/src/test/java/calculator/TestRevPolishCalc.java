@@ -14,7 +14,7 @@ class TestRevPolishCalc {
     calc = new RevPolishCalc();
   }
 
-  @Test // Test 1
+  @Test // Test 1 Checking to see if various errors are handled correctly.
   public void testInvalid() {
     assertThrows(InvalidExpressionException.class, () -> calc.evaluate(""));
     assertThrows(InvalidExpressionException.class, () -> calc.evaluate("(2 + 2) * 3"));
@@ -24,7 +24,11 @@ class TestRevPolishCalc {
   }
 
   @Test // Test 2
-  public void test() throws BadTypeException, InvalidExpressionException {
-    assertEquals(calc.evaluate("2 2 +"), 4f);
+  public void testSimpleExpressions() throws BadTypeException, InvalidExpressionException {
+    assertEquals(calc.evaluate("3 2 +"), 5f, "Expression should evaluate to 4.");
+    assertEquals(calc.evaluate("3 1 -"), 2f, "Expression should evaluate to 2.");
+    assertEquals(calc.evaluate("5 2 *"), 10f, "Expression should evaluate to 10.");
+    assertEquals(calc.evaluate("6 3 /"), 2f, "Expression should evaluate to 2.");
   }
+  
 }

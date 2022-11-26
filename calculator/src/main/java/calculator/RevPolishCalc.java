@@ -23,7 +23,6 @@ public class RevPolishCalc {
         float right = values.pop();
         float left = values.pop();
 
-
         switch (element) {
           case "+":
             result = left + right;
@@ -44,14 +43,12 @@ public class RevPolishCalc {
             throw new InvalidExpressionException("Invalid operator.");
         }
         values.push(result);
-
       } else {
         try {
           values.push(Float.parseFloat(element));
-        } catch (NumberFormatException nfe) {
+        } catch (NumberFormatException e) {
           throw new InvalidExpressionException("Not a number.");
         }
-        values.push(Float.parseFloat(element));
       }
     }
     return result;
