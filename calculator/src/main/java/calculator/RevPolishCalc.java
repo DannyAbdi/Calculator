@@ -9,6 +9,7 @@ public class RevPolishCalc {
   public float evaluate(String what) throws BadTypeException, InvalidExpressionException {
     String[] elements = what.split(" ");
     String[] operators = {"+", "-", "*", "/"};
+
     if (what.isEmpty()) {
       throw new InvalidExpressionException("Cannot evaulate an empty string.");
     } else if (what.contains("(") || what.contains(")")) {
