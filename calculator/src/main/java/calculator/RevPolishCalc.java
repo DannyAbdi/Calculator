@@ -3,7 +3,7 @@ package calculator;
 import java.util.Arrays;
 
 public class RevPolishCalc {
-  private NumStack values;
+  private NumStack values = new NumStack();
   private float result;
 
   public float evaluate(String what) throws BadTypeException, InvalidExpressionException {
