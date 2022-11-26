@@ -30,5 +30,12 @@ class TestRevPolishCalc {
     assertEquals(calc.evaluate("5 2 *"), 10f, "Expression should evaluate to 10.");
     assertEquals(calc.evaluate("6 3 /"), 2f, "Expression should evaluate to 2.");
   }
-  
+
+  @Test // Test 3
+  public void testComplexExpressions() throws BadTypeException, InvalidExpressionException {
+    assertEquals(calc.evaluate("8 3 7 + / 4 -"), -3.2f, "Expression should evaluate to -3.2.");
+    assertEquals(calc.evaluate("4 7 * 5 / 4 2 - *"), 11.2f, "Expression should evaluate to 11.2.");
+    assertEquals(calc.evaluate("9.3 42.1 * 27 3 / -"), 382.53f,
+        "Expression should evaluate to 382.53.");
+  }
 }
