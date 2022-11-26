@@ -2,10 +2,30 @@ package calculator;
 
 import java.util.Arrays;
 
+/**
+ * A calculator that can evaluate Reverse Polish string expressions (postfix) by creating smaller
+ * sub-expressions and adding the result back to the stack. Approach taken from geeksforgeeks.
+ * 
+ * @see "https://www.geeksforgeeks.org/evaluate-the-value-of-an-arithmetic-expression-in-reverse-polish-notation-in-java/"
+ *
+ * @author danny
+ *
+ */
 public class RevPolishCalc {
   private NumStack values = new NumStack();
   private float result;
 
+  /**
+   * Evaluates the expression by splitting the string into elements in an array. Iterates through
+   * each element and pops the stack twice if the current element is an operator. Then a
+   * sub-expression is formed using the 2 numbers and operator. The result is pushed back onto the
+   * stack and the process repeats until there are no more elements in the array.
+   * 
+   * @param what The string expression to evaluate.
+   * @return The result of the expression as a float.
+   * @throws BadTypeException Thrown if value is not a number.
+   * @throws InvalidExpressionException Thrown if there's an error in the string expression.
+   */
   public float evaluate(String what) throws BadTypeException, InvalidExpressionException {
     String[] elements = what.split(" ");
     String[] operators = {"+", "-", "*", "/"};
@@ -54,13 +74,3 @@ public class RevPolishCalc {
     return result;
   }
 }
-
-// what = "2 2 +"
-// becomes "2 + 2"
-// returns 2 + 2
-
-// create array of strings that splits input when there is a space
-// loop the contents of the array
-// if value is operator, pop both previous values from stack and calculate result
-// else push onto stack
-// return final calculation
