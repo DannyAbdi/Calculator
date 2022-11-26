@@ -18,6 +18,8 @@ class TestRevPolishCalc {
     assertThrows(InvalidExpressionException.class, () -> calc.evaluate(""));
     assertThrows(InvalidExpressionException.class, () -> calc.evaluate("(2 + 2) * 3"));
     assertThrows(InvalidExpressionException.class, () -> calc.evaluate("2 +"));
+    assertThrows(InvalidExpressionException.class, () -> calc.evaluate("2 0 /"));
+    assertThrows(InvalidExpressionException.class, () -> calc.evaluate("2 2 n"));
   }
   
   @Test // Test 2
