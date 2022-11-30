@@ -40,6 +40,19 @@ public class OpStack {
     }
     return opStack.pop().getSymbol();
   }
+  
+  /**
+   * Returns the last element in the stack. Throws an EmptyStackException if the stack is empty.
+   * 
+   * @return The last element in the stack.
+   * @throws BadTypeException If the value is not a symbol.
+   */
+  public Symbol top() throws BadTypeException {
+    if (opStack.size() == 0) {
+      throw new EmptyStackException();
+    }
+    return opStack.top().getSymbol();
+  }
 
   /**
    * Checks if the stack is empty and returns a boolean.

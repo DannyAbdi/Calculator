@@ -7,13 +7,23 @@ package calculator;
  *
  */
 public enum Symbol {
-  LEFT_BRACKET("("), RIGHT_BRACKET(")"), TIMES("*"), DIVIDE("/"), PLUS("+"), MINUS("-"), INVALID(
-      "Invalid");
+  LEFT_BRACKET("(", 0), RIGHT_BRACKET(")", 3), TIMES("*", 2), DIVIDE("/", 2), PLUS("+",
+      1), MINUS("-", 1), INVALID("Invalid");
 
   private String symbol;
-
+  private int precedence;
+  
   Symbol(String symbol) {
     this.symbol = symbol;
+  }
+
+  Symbol(String symbol, int precedence) {
+    this.symbol = symbol;
+    this.precedence = precedence;
+  }
+  
+  public int getPrecedence() {
+    return this.precedence;
   }
 
   @Override
