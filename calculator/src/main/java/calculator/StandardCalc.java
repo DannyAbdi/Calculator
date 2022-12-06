@@ -28,7 +28,7 @@ public class StandardCalc {
 
     for (String element : elements) {
       try {
-        postfix += (Float.parseFloat(element));
+        postfix += (Float.parseFloat(element)) + " ";
       } catch (NumberFormatException e) {
         if (Arrays.asList(operators).contains(element)) {
           for (int i = 0; i < operators.length; i++) {
@@ -59,7 +59,7 @@ public class StandardCalc {
       }
     }
     while (!ops.isEmpty()) {
-      postfix += ops.pop() + " ";
+      postfix += ops.pop() + "";
     }
     System.out.println(postfix);
     return rpCalc.evaluate(postfix);
