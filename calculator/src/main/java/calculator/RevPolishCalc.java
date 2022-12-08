@@ -21,7 +21,7 @@ public class RevPolishCalc {
    * sub-expression is formed using the 2 numbers and operator. The result is pushed back onto the
    * stack and the process repeats until there are no more elements in the array.
    * 
-   * @param what The string expression to evaluate.
+   * @param what The postfix string expression to evaluate.
    * @return The result of the expression as a float.
    * @throws BadTypeException Thrown if value is not a number.
    * @throws InvalidExpressionException Thrown if there's an error in the string expression.
