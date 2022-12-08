@@ -12,7 +12,7 @@ public enum Symbol {
 
   private String symbol;
   private int precedence;
-  
+
   Symbol(String symbol) {
     this.symbol = symbol;
   }
@@ -21,7 +21,12 @@ public enum Symbol {
     this.symbol = symbol;
     this.precedence = precedence;
   }
-  
+
+  /**
+   * Getter that accesses the precedence of a symbol.
+   * 
+   * @return The precedence.
+   */
   public int getPrecedence() {
     return this.precedence;
   }
