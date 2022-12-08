@@ -26,6 +26,15 @@ public class OpStack {
   public void push(Symbol entry) {
     opStack.push(new Entry(entry));
   }
+  
+  /**
+   * Returns the number of symbols.
+   * 
+   * @return The size of the ArrayList as an Integer.
+   */
+  public int size() {
+    return opStack.size();
+  }
 
   /**
    * Removes the last element in the stack and returns it.
