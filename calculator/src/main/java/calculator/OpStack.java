@@ -26,7 +26,7 @@ public class OpStack {
   public void push(Symbol entry) {
     opStack.push(new Entry(entry));
   }
-  
+
   /**
    * Returns the number of symbols.
    * 
@@ -40,7 +40,7 @@ public class OpStack {
    * Removes the last element in the stack and returns it.
    * 
    * @return Last element in the stack.
-   * @throws BadTypeException If the value is not a symbol.
+   * @throws BadTypeException    If the value is not a symbol.
    * @throws EmptyStackException If the stack is empty.
    */
   public Symbol pop() throws BadTypeException {
@@ -49,9 +49,10 @@ public class OpStack {
     }
     return opStack.pop().getSymbol();
   }
-  
+
   /**
-   * Returns the last element in the stack. Throws an EmptyStackException if the stack is empty.
+   * Returns the last element in the stack. Throws an EmptyStackException if the
+   * stack is empty.
    * 
    * @return The last element in the stack.
    * @throws BadTypeException If the value is not a symbol.

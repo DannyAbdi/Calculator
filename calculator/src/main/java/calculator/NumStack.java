@@ -31,7 +31,7 @@ public class NumStack {
    * Removes the last element in the stack and returns it.
    * 
    * @return Last element in the stack.
-   * @throws BadTypeException If the value is not a number.
+   * @throws BadTypeException    If the value is not a number.
    * @throws EmptyStackException If the stack is empty.
    */
   public float pop() throws BadTypeException {

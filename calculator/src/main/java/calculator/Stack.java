@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.EmptyStackException;
 
 /**
- * This program creates a stack and can add and remove entries stored in an ArrayList.
+ * This program creates a stack and can add and remove entries stored in an
+ * ArrayList.
  * 
  * @author Danny
  * 
@@ -41,8 +42,8 @@ public class Stack {
   }
 
   /**
-   * Removes the last element in the stack and returns it. Throws an EmptyStackException if the
-   * stack is empty. Reduces the value of size by 1.
+   * Removes the last element in the stack and returns it. Throws an
+   * EmptyStackException if the stack is empty. Reduces the value of size by 1.
    * 
    * @return The last element of the ArrayList.
    */
@@ -55,7 +56,8 @@ public class Stack {
   }
 
   /**
-   * Returns the last element in the stack. Throws an EmptyStackException if the stack is empty.
+   * Returns the last element in the stack. Throws an EmptyStackException if the
+   * stack is empty.
    * 
    * @return The last element of the ArrayList.
    */

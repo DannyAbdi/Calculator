@@ -112,15 +112,15 @@ public class Entry {
   public int hashCode() {
     int hash = 7648387;
     switch (this.type) {
-      case NUMBER:
-        return hash += 1193 * number;
-      case SYMBOL:
-        return hash += 1193 * other.hashCode();
-      case STRING:
-        return hash += 1193 * str.hashCode();
-      default:
-        // In this case it doesn't have a type
-        return -1;
+    case NUMBER:
+      return hash += 1193 * number;
+    case SYMBOL:
+      return hash += 1193 * other.hashCode();
+    case STRING:
+      return hash += 1193 * str.hashCode();
+    default:
+      // In this case it doesn't have a type
+      return -1;
     }
   }
 
@@ -140,17 +140,17 @@ public class Entry {
       return false;
     }
     switch (this.type) {
-      case NUMBER:
-        return o.number == number;
+    case NUMBER:
+      return o.number == number;
 
-      case SYMBOL:
-        return o.other == other;
+    case SYMBOL:
+      return o.other == other;
 
-      case STRING:
-        return o.str == str;
+    case STRING:
+      return o.str == str;
 
-      default:
-        return false;
+    default:
+      return false;
     }
   }
 }

@@ -3,8 +3,9 @@ package calculator;
 import java.util.Arrays;
 
 /**
- * A calculator that can evaluate infix string expressions by turning it into postfix and passing
- * the new string into RevPolishCalc. Approach taken from the Shunting Yard Algorithm.
+ * A calculator that can evaluate infix string expressions by turning it into
+ * postfix and passing the new string into RevPolishCalc. Approach taken from
+ * the Shunting Yard Algorithm.
  * 
  * @author danny
  *
@@ -12,22 +13,25 @@ import java.util.Arrays;
 public class StandardCalc {
   private OpStack ops = new OpStack();
   private RevPolishCalc rpCalc = new RevPolishCalc();
-  String[] operators = {"+", "-", "*", "/", "(", ")"};
-  Symbol[] symbols = {Symbol.PLUS, Symbol.MINUS, Symbol.TIMES, Symbol.DIVIDE, Symbol.LEFT_BRACKET,
-      Symbol.RIGHT_BRACKET};
+  String[] operators = { "+", "-", "*", "/", "(", ")" };
+  Symbol[] symbols = { Symbol.PLUS, Symbol.MINUS, Symbol.TIMES, Symbol.DIVIDE, Symbol.LEFT_BRACKET,
+      Symbol.RIGHT_BRACKET };
   int topPrecedence;
 
   /**
-   * Evaluates the expression by splitting the string into elements in an array. Iterates through
-   * each element. If element is a number, element is added to the new postfix expression.
-   * Otherwise, each element undergoes various condition checks to compare the precedence with the
-   * topmost symbol in the stack according to the Shunting Yard algorithm. The operators are then
-   * popped and appended to the postfix string which is passed as the argument in RevPolishCalc.
+   * Evaluates the expression by splitting the string into elements in an array.
+   * Iterates through each element. If element is a number, element is added to
+   * the new postfix expression. Otherwise, each element undergoes various
+   * condition checks to compare the precedence with the topmost symbol in the
+   * stack according to the Shunting Yard algorithm. The operators are then popped
+   * and appended to the postfix string which is passed as the argument in
+   * RevPolishCalc.
    * 
    * @param what The infix string expression to evaluate.
    * @return The result of the expression as a float.
-   * @throws BadTypeException Thrown if value is not a number.
-   * @throws InvalidExpressionException Thrown if there's an error in the string expression.
+   * @throws BadTypeException           Thrown if value is not a number.
+   * @throws InvalidExpressionException Thrown if there's an error in the string
+   *                                    expression.
    */
   public float evaluate(String what) throws BadTypeException, InvalidExpressionException {
     String[] elements = what.split(" ");
