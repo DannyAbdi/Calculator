@@ -3,8 +3,9 @@ package calculator;
 import java.util.Arrays;
 
 /**
- * A calculator that can evaluate Reverse Polish string expressions (postfix) by creating smaller
- * sub-expressions and adding the result back to the stack. Approach taken from geeksforgeeks.
+ * A calculator that can evaluate Reverse Polish string expressions (postfix) by
+ * creating smaller sub-expressions and adding the result back to the stack.
+ * Approach taken from geeksforgeeks.
  * 
  * @see "https://www.geeksforgeeks.org/evaluate-the-value-of-an-arithmetic-expression-in-reverse-polish-notation-in-java/"
  *
@@ -16,19 +17,21 @@ public class RevPolishCalc {
   private float result;
 
   /**
-   * Evaluates the expression by splitting the string into elements in an array. Iterates through
-   * each element and pops the stack twice if the current element is an operator. Then a
-   * sub-expression is formed using the 2 numbers and operator. The result is pushed back onto the
-   * stack and the process repeats until there are no more elements in the array.
+   * Evaluates the expression by splitting the string into elements in an array.
+   * Iterates through each element and pops the stack twice if the current element
+   * is an operator. Then a sub-expression is formed using the 2 numbers and
+   * operator. The result is pushed back onto the stack and the process repeats
+   * until there are no more elements in the array.
    * 
    * @param what The postfix string expression to evaluate.
    * @return The result of the expression as a float.
-   * @throws BadTypeException Thrown if value is not a number.
-   * @throws InvalidExpressionException Thrown if there's an error in the string expression.
+   * @throws BadTypeException           Thrown if value is not a number.
+   * @throws InvalidExpressionException Thrown if there's an error in the string
+   *                                    expression.
    */
   public float evaluate(String what) throws BadTypeException, InvalidExpressionException {
     String[] elements = what.split(" ");
-    String[] operators = {"+", "-", "*", "/"};
+    String[] operators = { "+", "-", "*", "/" };
 
     if (what.isEmpty()) {
       throw new InvalidExpressionException("Cannot evaulate an empty string.");
@@ -60,7 +63,6 @@ public class RevPolishCalc {
             result = left / right;
             break;
           default:
-            throw new InvalidExpressionException("Invalid operator.");
         }
         values.push(result);
       } else {
