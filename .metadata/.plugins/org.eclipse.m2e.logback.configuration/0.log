@@ -1,0 +1,1041 @@
+2022-12-13 19:02:12,672 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:12,673 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:02:12,673 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:12,673 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:12,674 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:12,948 [Worker-43: Periodic workspace save.] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: /home/danny/CS2800/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:137) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:127) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:977) ~[na:na]
+	at org.eclipse.m2e.core.internal.MavenPluginActivator$1.saving(MavenPluginActivator.java:142) ~[na:na]
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:394) ~[na:na]
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:210) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:213) ~[na:na]
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1171) ~[na:na]
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1150) ~[na:na]
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2022-12-13 19:02:13,799 [Worker-43: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: uk.ac.rhul.cs2800:Calculator:0.0.1-SNAPSHOT @ /home/danny/CS2800/calculator/pom.xml.
+2022-12-13 19:02:13,806 [Worker-43: Building] ERROR o.e.m.core.internal.ExtensionReader - Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+org.eclipse.core.runtime.CoreException: Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.umlet.plugin (419).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.createComputer(CompletionProposalComputerDescriptor.java:323) ~[na:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.getComputer(CompletionProposalComputerDescriptor.java:290) ~[na:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.sessionStarted(CompletionProposalComputerDescriptor.java:436) ~[na:na]
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.sessionStarted(CompletionProposalCategory.java:387) ~[na:na]
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor$CompletionListener.assistSessionStarted(ContentAssistProcessor.java:124) ~[na:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant.lambda$10(ContentAssistant.java:2467) ~[na:na]
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4797) ~[na:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2464) ~[na:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1886) ~[na:na]
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:397) ~[na:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40) ~[org.eclipse.swt.gtk.linux.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132) ~[org.eclipse.swt.gtk.linux.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5000) ~[org.eclipse.swt.gtk.linux.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4480) ~[org.eclipse.swt.gtk.linux.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+Caused by: org.osgi.framework.BundleException: Exception in com.baselet.plugin.MainPlugin.start() of bundle com.umlet.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:839) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:468) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	... 48 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2633) ~[na:na]
+	at java.base/java.lang.Runtime.load0(Runtime.java:768) ~[na:na]
+	at java.base/java.lang.System.load(System.java:1837) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2445) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2501) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2700) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2651) ~[na:na]
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830) ~[na:na]
+	at java.base/java.lang.System.loadLibrary(System.java:1873) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1399) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1397) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1396) ~[na:na]
+	at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1429) ~[na:na]
+	at java.desktop/javax.swing.UIManager.getSystemLookAndFeelClassName(UIManager.java:661) ~[na:na]
+	at com.baselet.control.config.Config.initUiManager(Config.java:69) ~[na:na]
+	at com.baselet.control.config.Config.<init>(Config.java:60) ~[na:na]
+	at com.baselet.control.config.Config.<clinit>(Config.java:22) ~[na:na]
+	at com.baselet.control.config.handler.ConfigHandler.loadConfig(ConfigHandler.java:86) ~[na:na]
+	at com.baselet.plugin.MainPlugin.start(MainPlugin.java:85) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	... 55 common frames omitted
+2022-12-13 19:02:13,810 [Worker-43: Building] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to add uk/ac/rhul/cs2800/Calculator/0.0.1-SNAPSHOT/Calculator-0.0.1-SNAPSHOT.pom
+java.nio.file.NoSuchFileException: /home/danny/CS2800/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/write.lock
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[na:na]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[na:na]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[na:na]
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55) ~[na:na]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149) ~[na:na]
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99) ~[na:na]
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764) ~[na:na]
+	at org.apache.lucene.store.NativeFSLockFactory$NativeFSLock.ensureValid(NativeFSLockFactory.java:177) ~[na:na]
+	at org.apache.lucene.store.LockValidatingDirectoryWrapper.createOutput(LockValidatingDirectoryWrapper.java:43) ~[na:na]
+	at org.apache.lucene.store.TrackingDirectoryWrapper.createOutput(TrackingDirectoryWrapper.java:43) ~[na:na]
+	at org.apache.lucene.codecs.compressing.CompressingStoredFieldsWriter.<init>(CompressingStoredFieldsWriter.java:108) ~[na:na]
+	at org.apache.lucene.codecs.compressing.CompressingStoredFieldsFormat.fieldsWriter(CompressingStoredFieldsFormat.java:128) ~[na:na]
+	at org.apache.lucene.codecs.lucene50.Lucene50StoredFieldsFormat.fieldsWriter(Lucene50StoredFieldsFormat.java:183) ~[na:na]
+	at org.apache.lucene.index.DefaultIndexingChain.initStoredFieldsWriter(DefaultIndexingChain.java:81) ~[na:na]
+	at org.apache.lucene.index.DefaultIndexingChain.startStoredFields(DefaultIndexingChain.java:279) ~[na:na]
+	at org.apache.lucene.index.DefaultIndexingChain.processDocument(DefaultIndexingChain.java:316) ~[na:na]
+	at org.apache.lucene.index.DocumentsWriterPerThread.updateDocument(DocumentsWriterPerThread.java:234) ~[na:na]
+	at org.apache.lucene.index.DocumentsWriter.updateDocument(DocumentsWriter.java:450) ~[na:na]
+	at org.apache.lucene.index.IndexWriter.updateDocument(IndexWriter.java:1477) ~[na:na]
+	at org.apache.maven.index.DefaultIndexerEngine.update(DefaultIndexerEngine.java:86) ~[na:na]
+	at org.apache.maven.index.DefaultIndexer.addArtifactsToIndex(DefaultIndexer.java:129) ~[na:na]
+	at org.apache.maven.index.DefaultNexusIndexer.addArtifactToIndex(DefaultNexusIndexer.java:347) ~[na:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.addDocument(NexusIndexManager.java:613) ~[na:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:781) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2022-12-13 19:02:13,815 [Worker-43: Building] ERROR o.e.m.jdt.internal.BuildPathManager - Can't save classpath container state for calculator
+java.io.FileNotFoundException: /home/danny/CS2800/.metadata/.plugins/org.eclipse.m2e.jdt/calculator.container (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.saveContainerState(BuildPathManager.java:221) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.updateClasspath(BuildPathManager.java:212) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.mavenProjectChanged(BuildPathManager.java:196) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2022-12-13 19:02:13,847 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:13,848 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:13,848 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:13,849 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:13,849 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:15,033 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:15,033 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:02:15,036 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:15,036 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:15,037 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:21,334 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:21,335 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:02:21,335 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:21,335 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:21,336 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:22,342 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:22,342 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:02:22,343 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:22,343 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:22,343 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:23,349 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:23,349 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:02:23,349 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:23,350 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:23,350 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:24,365 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:24,366 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-12-13 19:02:24,366 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:24,366 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:24,367 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:25,418 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:25,419 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-12-13 19:02:25,419 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 19:02:25,420 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:02:25,420 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:02:38,178 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-12-13 19:04:15,670 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-12-13 19:04:52,966 [Worker-11: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: uk.ac.rhul.cs2800:Calculator:0.0.1-SNAPSHOT @ /home/danny/CS2800/calculator/pom.xml.
+2022-12-13 19:04:53,032 [Worker-11: Building] ERROR o.e.m.core.internal.ExtensionReader - Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+org.eclipse.core.runtime.CoreException: Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.umlet.plugin (419).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	... 27 common frames omitted
+Caused by: org.osgi.framework.BundleException: Exception in com.baselet.plugin.MainPlugin.start() of bundle com.umlet.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:839) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:468) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	... 36 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2633) ~[na:na]
+	at java.base/java.lang.Runtime.load0(Runtime.java:768) ~[na:na]
+	at java.base/java.lang.System.load(System.java:1837) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2445) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2501) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2700) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2651) ~[na:na]
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830) ~[na:na]
+	at java.base/java.lang.System.loadLibrary(System.java:1873) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1399) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1397) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1396) ~[na:na]
+	at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1429) ~[na:na]
+	at java.desktop/javax.swing.UIManager.getSystemLookAndFeelClassName(UIManager.java:661) ~[na:na]
+	at com.baselet.control.config.Config.initUiManager(Config.java:69) ~[na:na]
+	at com.baselet.control.config.Config.<init>(Config.java:60) ~[na:na]
+	at com.baselet.control.config.Config.<clinit>(Config.java:22) ~[na:na]
+	at com.baselet.control.config.handler.ConfigHandler.loadConfig(ConfigHandler.java:86) ~[na:na]
+	at com.baselet.plugin.MainPlugin.start(MainPlugin.java:85) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	... 43 common frames omitted
+2022-12-13 19:04:53,124 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:04:53,127 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 19:04:53,131 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:04:53,133 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:04:53,133 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:04:54,519 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:04:54,522 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 19:04:54,524 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:04:54,525 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:04:54,526 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:06:12,390 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:06:12,391 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 19:06:12,393 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:06:12,394 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:06:12,395 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:06:13,596 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: uk.ac.rhul.cs2800:Calculator:0.0.1-SNAPSHOT @ /home/danny/CS2800/calculator/pom.xml.
+2022-12-13 19:06:13,608 [Worker-9: Building] ERROR o.e.m.core.internal.ExtensionReader - Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+org.eclipse.core.runtime.CoreException: Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.umlet.plugin (419).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	... 27 common frames omitted
+Caused by: org.osgi.framework.BundleException: Exception in com.baselet.plugin.MainPlugin.start() of bundle com.umlet.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:839) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:468) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	... 36 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2633) ~[na:na]
+	at java.base/java.lang.Runtime.load0(Runtime.java:768) ~[na:na]
+	at java.base/java.lang.System.load(System.java:1837) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2445) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2501) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2700) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2651) ~[na:na]
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830) ~[na:na]
+	at java.base/java.lang.System.loadLibrary(System.java:1873) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1399) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1397) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1396) ~[na:na]
+	at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1429) ~[na:na]
+	at java.desktop/javax.swing.UIManager.getSystemLookAndFeelClassName(UIManager.java:661) ~[na:na]
+	at com.baselet.control.config.Config.initUiManager(Config.java:69) ~[na:na]
+	at com.baselet.control.config.Config.<init>(Config.java:60) ~[na:na]
+	at com.baselet.control.config.Config.<clinit>(Config.java:22) ~[na:na]
+	at com.baselet.control.config.handler.ConfigHandler.loadConfig(ConfigHandler.java:86) ~[na:na]
+	at com.baselet.plugin.MainPlugin.start(MainPlugin.java:85) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	... 43 common frames omitted
+2022-12-13 19:06:13,674 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:06:13,675 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 19:06:13,677 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:06:13,678 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:06:13,678 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:06:25,481 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:06:25,482 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 19:06:25,482 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:06:25,483 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:06:25,484 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:58:42,412 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-12-13 19:58:48,428 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:58:48,432 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 19:58:48,450 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:58:48,453 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:58:48,453 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 19:59:26,530 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-12-13 19:59:26,927 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: uk.ac.rhul.cs2800:Calculator:0.0.1-SNAPSHOT @ /home/danny/CS2800/calculator/pom.xml.
+2022-12-13 19:59:26,999 [Worker-16: Updating Maven Project] ERROR o.e.m.core.internal.ExtensionReader - Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+org.eclipse.core.runtime.CoreException: Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:413) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80) ~[org.eclipse.m2e.core.ui_1.19.0.20220206-1032.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.umlet.plugin (419).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	... 17 common frames omitted
+Caused by: org.osgi.framework.BundleException: Exception in com.baselet.plugin.MainPlugin.start() of bundle com.umlet.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:839) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:468) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	... 26 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2633) ~[na:na]
+	at java.base/java.lang.Runtime.load0(Runtime.java:768) ~[na:na]
+	at java.base/java.lang.System.load(System.java:1837) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2445) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2501) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2700) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2651) ~[na:na]
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830) ~[na:na]
+	at java.base/java.lang.System.loadLibrary(System.java:1873) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1399) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1397) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1396) ~[na:na]
+	at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1429) ~[na:na]
+	at java.desktop/javax.swing.UIManager.getSystemLookAndFeelClassName(UIManager.java:661) ~[na:na]
+	at com.baselet.control.config.Config.initUiManager(Config.java:69) ~[na:na]
+	at com.baselet.control.config.Config.<init>(Config.java:60) ~[na:na]
+	at com.baselet.control.config.Config.<clinit>(Config.java:22) ~[na:na]
+	at com.baselet.control.config.handler.ConfigHandler.loadConfig(ConfigHandler.java:86) ~[na:na]
+	at com.baselet.plugin.MainPlugin.start(MainPlugin.java:85) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	... 33 common frames omitted
+2022-12-13 19:59:27,160 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/main/java
+2022-12-13 19:59:27,161 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /calculator/src/main/java overlaps with sources folder /calculator/src/main/java
+2022-12-13 19:59:27,161 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /calculator/src/main/resources
+2022-12-13 19:59:27,161 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/test/java
+2022-12-13 19:59:27,301 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-12-13 19:59:27,890 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:59:27,891 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 19:59:27,897 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 19:59:27,900 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 19:59:27,900 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:02:15,726 [Worker-10: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:02:15,727 [Worker-10: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:04:39,507 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:04:39,508 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 20:04:39,508 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 20:04:39,509 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:04:39,509 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:04:49,041 [Worker-31: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-12-13 20:04:49,202 [Worker-31: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: uk.ac.rhul.cs2800:Calculator:0.0.1-SNAPSHOT @ /home/danny/CS2800/calculator/pom.xml.
+2022-12-13 20:04:49,214 [Worker-31: Updating Maven Project] ERROR o.e.m.core.internal.ExtensionReader - Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+org.eclipse.core.runtime.CoreException: Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:413) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80) ~[org.eclipse.m2e.core.ui_1.19.0.20220206-1032.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.umlet.plugin (419).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	... 17 common frames omitted
+Caused by: org.osgi.framework.BundleException: Exception in com.baselet.plugin.MainPlugin.start() of bundle com.umlet.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:839) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:468) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	... 26 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2633) ~[na:na]
+	at java.base/java.lang.Runtime.load0(Runtime.java:768) ~[na:na]
+	at java.base/java.lang.System.load(System.java:1837) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2445) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2501) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2700) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2651) ~[na:na]
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830) ~[na:na]
+	at java.base/java.lang.System.loadLibrary(System.java:1873) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1399) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1397) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1396) ~[na:na]
+	at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1429) ~[na:na]
+	at java.desktop/javax.swing.UIManager.getSystemLookAndFeelClassName(UIManager.java:661) ~[na:na]
+	at com.baselet.control.config.Config.initUiManager(Config.java:69) ~[na:na]
+	at com.baselet.control.config.Config.<init>(Config.java:60) ~[na:na]
+	at com.baselet.control.config.Config.<clinit>(Config.java:22) ~[na:na]
+	at com.baselet.control.config.handler.ConfigHandler.loadConfig(ConfigHandler.java:86) ~[na:na]
+	at com.baselet.plugin.MainPlugin.start(MainPlugin.java:85) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	... 33 common frames omitted
+2022-12-13 20:04:49,305 [Worker-31: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/main/java
+2022-12-13 20:04:49,305 [Worker-31: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /calculator/src/main/java overlaps with sources folder /calculator/src/main/java
+2022-12-13 20:04:49,305 [Worker-31: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /calculator/src/main/resources
+2022-12-13 20:04:49,305 [Worker-31: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/test/java
+2022-12-13 20:04:49,413 [Worker-31: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-12-13 20:04:49,820 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:04:49,820 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:04:49,826 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:04:49,827 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:04:49,828 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:04:54,181 [Worker-21: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:04:54,181 [Worker-21: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:14:55,938 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:14:55,940 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:14:55,942 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:14:55,943 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:14:55,943 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:15:03,433 [Worker-33: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:15:03,433 [Worker-33: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:16:14,878 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:16:14,878 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:16:14,879 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:16:14,880 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:16:14,880 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:30:01,423 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:30:01,424 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:30:01,424 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:30:01,425 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:30:01,425 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:30:09,235 [Worker-40: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:30:09,235 [Worker-40: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:30:33,013 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:30:33,014 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:30:33,015 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:30:33,016 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:30:33,017 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:30:37,096 [Worker-42: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:30:37,096 [Worker-42: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:31:57,478 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:31:57,479 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:31:57,480 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:31:57,481 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:31:57,482 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:32:02,865 [Worker-40: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:32:02,866 [Worker-40: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:32:20,560 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:32:20,561 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:32:20,562 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:32:20,563 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:32:20,563 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:32:23,446 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:32:23,447 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:32:23,448 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:32:23,450 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:32:23,450 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:32:27,907 [Worker-41: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:32:27,907 [Worker-41: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:34:01,618 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:34:01,619 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:34:01,620 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:34:01,621 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:34:01,621 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:34:06,191 [Worker-41: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:34:06,191 [Worker-41: Launching New_configuration] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:36:09,359 [Worker-41: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-12-13 20:36:09,506 [Worker-41: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: uk.ac.rhul.cs2800:Calculator:0.0.1-SNAPSHOT @ /home/danny/CS2800/calculator/pom.xml.
+2022-12-13 20:36:09,517 [Worker-41: Updating Maven Project] ERROR o.e.m.core.internal.ExtensionReader - Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+org.eclipse.core.runtime.CoreException: Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:413) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80) ~[org.eclipse.m2e.core.ui_1.19.0.20220206-1032.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.umlet.plugin (419).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	... 17 common frames omitted
+Caused by: org.osgi.framework.BundleException: Exception in com.baselet.plugin.MainPlugin.start() of bundle com.umlet.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:839) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:468) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	... 26 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2633) ~[na:na]
+	at java.base/java.lang.Runtime.load0(Runtime.java:768) ~[na:na]
+	at java.base/java.lang.System.load(System.java:1837) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2445) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2501) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2700) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2651) ~[na:na]
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830) ~[na:na]
+	at java.base/java.lang.System.loadLibrary(System.java:1873) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1399) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1397) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1396) ~[na:na]
+	at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1429) ~[na:na]
+	at java.desktop/javax.swing.UIManager.getSystemLookAndFeelClassName(UIManager.java:661) ~[na:na]
+	at com.baselet.control.config.Config.initUiManager(Config.java:69) ~[na:na]
+	at com.baselet.control.config.Config.<init>(Config.java:60) ~[na:na]
+	at com.baselet.control.config.Config.<clinit>(Config.java:22) ~[na:na]
+	at com.baselet.control.config.handler.ConfigHandler.loadConfig(ConfigHandler.java:86) ~[na:na]
+	at com.baselet.plugin.MainPlugin.start(MainPlugin.java:85) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	... 33 common frames omitted
+2022-12-13 20:36:09,610 [Worker-41: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/main/java
+2022-12-13 20:36:09,610 [Worker-41: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /calculator/src/main/java overlaps with sources folder /calculator/src/main/java
+2022-12-13 20:36:09,610 [Worker-41: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /calculator/src/main/resources
+2022-12-13 20:36:09,610 [Worker-41: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/test/java
+2022-12-13 20:36:09,710 [Worker-41: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-12-13 20:36:10,136 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:36:10,137 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 20:36:10,142 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 20:36:10,144 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:36:10,144 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 20:36:45,954 [Worker-50: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 20:36:45,954 [Worker-50: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 20:36:46,110 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:36:46,111 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 20:36:46,111 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 20:36:46,113 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 20:36:46,113 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:02:22,976 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:02:22,977 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:02:22,977 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:02:22,978 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:02:22,978 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:02:58,491 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:02:58,491 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:02:58,492 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:02:58,493 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:02:58,493 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:03:04,686 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:03:04,687 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:03:04,688 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:03:04,689 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:03:04,689 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:03:22,287 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:03:22,287 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:03:22,288 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:03:22,289 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:03:22,289 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:04:16,387 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:04:16,387 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:04:16,388 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:04:16,389 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:04:16,389 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:04:29,333 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:04:29,334 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:04:29,335 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:04:29,336 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:04:29,337 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:05:53,695 [Worker-53: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 21:05:53,695 [Worker-53: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 21:05:53,889 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:05:53,890 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:05:53,891 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:05:53,891 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:05:53,892 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:06:38,712 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:06:38,712 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:06:38,712 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:06:38,713 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:06:38,713 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:08:17,387 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:08:17,387 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:08:17,388 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:08:17,388 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:08:17,389 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:08:19,089 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:08:19,090 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:08:19,090 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:08:19,090 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:08:19,091 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:08:25,493 [Worker-55: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 21:08:25,493 [Worker-55: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 21:09:14,691 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:09:14,692 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:09:14,692 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:09:14,693 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:09:14,693 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:10:15,485 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:10:15,485 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:10:15,485 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:10:15,486 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:10:15,486 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:10:23,455 [Worker-54: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 21:10:23,455 [Worker-54: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 21:10:23,579 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:10:23,579 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:10:23,580 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:10:23,581 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:10:23,582 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:10:49,186 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:10:49,187 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:10:49,187 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:10:49,188 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:10:49,188 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:10:58,181 [Worker-58: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 21:10:58,181 [Worker-58: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 21:19:31,529 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:31,529 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:19:31,530 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:19:31,530 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:31,531 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:19:35,483 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:35,484 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:19:35,484 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:19:35,485 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:35,485 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:19:43,268 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:43,269 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:19:43,270 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:19:43,271 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:43,271 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:19:54,228 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:54,228 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2022-12-13 21:19:54,229 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:19:54,230 [Worker-61: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:19:54,230 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:20:00,943 [Worker-60: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 21:20:00,943 [Worker-60: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 21:21:32,453 [Worker-63: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 21:21:32,453 [Worker-63: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 21:22:35,958 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:22:35,959 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:22:35,959 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:22:35,961 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:22:35,962 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:22:37,013 [Worker-65: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:22:37,013 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:22:37,013 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:22:37,014 [Worker-65: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:22:37,014 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:22:41,385 [Worker-64: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-13 21:22:41,385 [Worker-64: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-13 21:25:53,312 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:53,313 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2022-12-13 21:25:53,315 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:25:53,316 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:53,316 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:25:54,755 [Worker-68: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DemoWeekThree:DemoWeekThree:0.0.1-SNAPSHOT @ /home/danny/CS2800/calculator/pom.xml.
+2022-12-13 21:25:54,768 [Worker-68: Building] ERROR o.e.m.core.internal.ExtensionReader - Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+org.eclipse.core.runtime.CoreException: Plug-in com.umlet.plugin was unable to load class com.baselet.plugin.MavenProjectChangedListener.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:198) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.umlet.plugin (419).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.11.100.v20211021-1418.jar:na]
+	at org.eclipse.m2e.core.internal.ExtensionReader.readProjectChangedEventListenerExtentions(ExtensionReader.java:124) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:804) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:413) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80) ~[org.eclipse.m2e.core.ui_1.19.0.20220206-1032.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43) ~[na:na]
+	... 1 common frames omitted
+Caused by: org.osgi.framework.BundleException: Exception in com.baselet.plugin.MainPlugin.start() of bundle com.umlet.plugin.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:839) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:468) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	... 26 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /usr/lib/jvm/java-11-openjdk-amd64/lib/libawt_xawt.so
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2633) ~[na:na]
+	at java.base/java.lang.Runtime.load0(Runtime.java:768) ~[na:na]
+	at java.base/java.lang.System.load(System.java:1837) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2445) ~[na:na]
+	at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2501) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2700) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2651) ~[na:na]
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830) ~[na:na]
+	at java.base/java.lang.System.loadLibrary(System.java:1873) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1399) ~[na:na]
+	at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1397) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1396) ~[na:na]
+	at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1429) ~[na:na]
+	at java.desktop/javax.swing.UIManager.getSystemLookAndFeelClassName(UIManager.java:661) ~[na:na]
+	at com.baselet.control.config.Config.initUiManager(Config.java:69) ~[na:na]
+	at com.baselet.control.config.Config.<init>(Config.java:60) ~[na:na]
+	at com.baselet.control.config.Config.<clinit>(Config.java:22) ~[na:na]
+	at com.baselet.control.config.handler.ConfigHandler.loadConfig(ConfigHandler.java:86) ~[na:na]
+	at com.baselet.plugin.MainPlugin.start(MainPlugin.java:85) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	... 33 common frames omitted
+2022-12-13 21:25:55,549 [Worker-68: Building] ERROR c.b.m.c.q.c.EclipseCheckstyleProjectConfigurator - CheckstylePluginException
+net.sf.eclipsecs.core.util.CheckstylePluginException: Failed to resolve RuleSet from inlineConfig or configLocation,SKIPPING Eclipse checkstyle configuration
+	at com.basistech.m2e.code.quality.checkstyle.MavenPluginConfigurationTranslator.getRuleset(MavenPluginConfigurationTranslator.java:113) ~[na:na]
+	at com.basistech.m2e.code.quality.checkstyle.EclipseCheckstyleProjectConfigurator.buildCheckstyleConfiguration(EclipseCheckstyleProjectConfigurator.java:130) ~[na:na]
+	at com.basistech.m2e.code.quality.checkstyle.EclipseCheckstyleProjectConfigurator.handleProjectConfigurationChange(EclipseCheckstyleProjectConfigurator.java:107) ~[na:na]
+	at com.basistech.m2e.code.quality.shared.AbstractMavenPluginProjectConfigurator.mavenProjectChanged(AbstractMavenPluginProjectConfigurator.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:1056) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:305) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88) ~[na:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462) ~[na:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161) ~[na:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2022-12-13 21:25:55,693 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:55,694 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:25:55,699 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:55,699 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:25:56,800 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:56,800 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:25:56,801 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:56,801 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:25:58,103 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:58,104 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:25:58,105 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:25:58,105 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:26:01,115 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:26:01,118 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-13 21:26:01,119 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:26:01,120 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:26:02,139 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:26:02,139 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:26:02,140 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:26:02,140 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:26:26,319 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:26:26,320 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:26:26,320 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:26:26,321 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-13 21:28:04,922 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:28:04,922 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-13 21:28:04,923 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-13 21:28:04,924 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
