@@ -1,7 +1,6 @@
 package calculator;
 
 import java.io.IOException;
-import java.util.Observer;
 
 import javafx.application.Application;
 import javafx.fxml.FXML;

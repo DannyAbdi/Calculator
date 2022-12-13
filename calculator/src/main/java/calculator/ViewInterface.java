@@ -1,6 +1,5 @@
 package calculator;
 
-import java.util.Observer;
 import java.util.function.Consumer;
 
 /**
@@ -49,4 +48,7 @@ public interface ViewInterface {
 	 * Menu.
 	 */
 	public void menu();
+	
+	public OpType retrieveOpType();
+
 }
