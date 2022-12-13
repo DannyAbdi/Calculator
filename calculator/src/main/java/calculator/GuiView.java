@@ -1,6 +1,8 @@
 package calculator;
 
 import java.io.IOException;
+import java.util.Observer;
+
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +18,7 @@ import javafx.stage.Stage;
  * @author Dave Cohen
  *
  */
-public class GuiView extends Application {
+public class GuiView extends Application implements ViewInterface {
   @FXML
   private TextField inputField;
   @FXML
@@ -38,7 +40,7 @@ public class GuiView extends Application {
    * 
    * @return instance.
    */
-  public synchronized GuiView getInstance() {
+  public static synchronized GuiView getInstance() {
     if (instance == null) {
       new Thread(() -> Application.launch(GuiView.class)).start();
 
@@ -51,9 +53,9 @@ public class GuiView extends Application {
 
   @Override
   public void start(Stage primaryStage) throws IOException {
-    GridPane page = (GridPane) FXMLLoader.load(GuiView.class.getResource("View.fxml"));
+    GridPane page = (GridPane) FXMLLoader.load(getClass().getClassLoader().getResource("View.fxml"));
     Scene scene = new Scene(page);
-    scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+//    scene.getStylesheets().add(getClass().getResource("calculator.css").toExternalForm());
     primaryStage.setScene(scene);
     primaryStage.setTitle("Calculator");
     primaryStage.show();
@@ -84,4 +86,34 @@ public class GuiView extends Application {
     calcButton.setDisable(false);
     resetButton.setDisable(false);
   }
+
+@Override
+public String getExpression() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public void setAnswer(String str) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void addCalcObserver(Observer c) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void addTypeObserver(Observer t) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void addResetObserver(Observer r) {
+	// TODO Auto-generated method stub
+	
+}
 }
