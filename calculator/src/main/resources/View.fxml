@@ -26,7 +26,7 @@
             </Label>
             <RadioButton fx:id="postfixButton" layoutX="240.0" layoutY="117.0" mnemonicParsing="false" text="Postfix">
                <font>
-                  <Font name="Monospaced Regular" size="20.0" />
+                  <Font size="20.0" />
                </font>
             </RadioButton>
             <Label fx:id="calculatorLabel" layoutX="205.0" layoutY="45.0" text="Calculator">

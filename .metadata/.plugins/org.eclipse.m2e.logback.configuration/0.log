@@ -2564,3 +2564,40 @@ Caused by: org.apache.lucene.store.AlreadyClosedException: Underlying file chang
 2022-12-15 18:38:47,944 [Worker-100: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
 2022-12-15 18:39:21,670 [Worker-99: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
 2022-12-15 18:39:21,670 [Worker-99: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-15 18:55:00,214 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-15 18:55:00,214 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-15 18:58:00,727 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-15 18:58:00,727 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-15 18:58:24,586 [Worker-106: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 18:58:24,586 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-15 18:58:24,586 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-15 18:58:24,587 [Worker-106: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 18:58:24,587 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-15 18:58:31,046 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-15 18:58:31,046 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-15 18:59:45,200 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-15 18:59:45,200 [Worker-104: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-15 19:00:41,936 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:00:41,936 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-15 19:00:41,937 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-15 19:00:41,937 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:00:41,937 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-15 19:01:40,074 [Worker-107: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:01:40,075 [Worker-107: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-15 19:01:40,075 [Worker-107: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-15 19:01:40,076 [Worker-107: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:01:40,076 [Worker-107: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-15 19:01:44,466 [Worker-106: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-15 19:01:44,466 [Worker-106: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"
+2022-12-15 19:04:27,478 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:04:27,478 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-15 19:04:27,478 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-15 19:04:27,479 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:04:27,479 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-15 19:04:28,535 [Worker-108: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:04:28,535 [Worker-108: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-15 19:04:28,535 [Worker-108: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-15 19:04:28,535 [Worker-108: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-12-15 19:04:28,536 [Worker-108: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/danny/CS2800/calculator/src/test/resources
+2022-12-15 19:04:34,034 [Worker-105: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/danny/CS2800/calculator
+2022-12-15 19:04:34,034 [Worker-105: Launching calc] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B exec:java -Dexec.mainClass="calculator.Driver"

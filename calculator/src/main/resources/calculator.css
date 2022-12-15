@@ -5,6 +5,10 @@ BorderPane {
 #calcButton {
   -fx-background-color: #f4a261;
 }
+#postfixButton {
+  -fx-font-family: Monospace;
+  -fx-text-fill: #e9c46a
+ }
 
 #calculatorLabel {
   -fx-font-weight: bold;
@@ -17,14 +21,8 @@ BorderPane {
   -fx-font-weight: light;
   -fx-text-fill: #e9c46a;
 }
-
-#postfixButton {
-  -fx-font-family: Monospace;
-  -fx-text-fill: #e9c46a
- }
  
 TextField {
   -fx-background-color: #f4a261
-  
 }
   
