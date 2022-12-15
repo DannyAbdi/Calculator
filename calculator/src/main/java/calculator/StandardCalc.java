@@ -16,7 +16,6 @@ public class StandardCalc {
   String[] operators = { "+", "-", "*", "/", "(", ")" };
   Symbol[] symbols = { Symbol.PLUS, Symbol.MINUS, Symbol.TIMES, Symbol.DIVIDE, Symbol.LEFT_BRACKET,
       Symbol.RIGHT_BRACKET };
-  int topPrecedence;
 
   /**
    * Evaluates the expression by splitting the string into elements in an array.
@@ -74,7 +73,13 @@ public class StandardCalc {
     return rpCalc.evaluate(postfix);
   }
 
-  private Symbol toSymbol(String expression) {
+  /**
+   * Converts string to symbol.
+   * 
+ * @param expression The symbol as a String.
+ * @return The symbol.
+ */
+private Symbol toSymbol(String expression) {
     switch (expression) {
       case "+":
         return Symbol.PLUS;

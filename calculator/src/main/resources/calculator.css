@@ -1,0 +1,30 @@
+BorderPane {
+  -fx-background-color: #264653;
+}
+
+#calcButton {
+  -fx-background-color: #f4a261;
+}
+
+#calculatorLabel {
+  -fx-font-weight: bold;
+  -fx-font-family: Monospace;
+  -fx-text-fill: #2a9d8f;
+}
+
+#inputLabel, #answerLabel {
+  -fx-font-family: Monospace;
+  -fx-font-weight: light;
+  -fx-text-fill: #e9c46a;
+}
+
+#postfixButton {
+  -fx-font-family: Monospace;
+  -fx-text-fill: #e9c46a
+ }
+ 
+TextField {
+  -fx-background-color: #f4a261
+  
+}
+  

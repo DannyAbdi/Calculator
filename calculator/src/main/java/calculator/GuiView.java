@@ -7,9 +7,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.scene.control.Label;
 
 /**
  * This class oversees the interaction between JavaFX and the FXML file.
@@ -18,101 +21,116 @@ import javafx.stage.Stage;
  *
  */
 public class GuiView extends Application implements ViewInterface {
-  @FXML
-  private TextField inputField;
-  @FXML
-  private TextField totalField;
-  @FXML
-  private Button calcButton = null;
-  @FXML
-  private Button resetButton = null;
+	@FXML
+    private TextField answerField;
 
-  private static GuiView instance = null;
+    @FXML
+    private Label answerLabel;
 
-  @FXML
-  void initialize() {
-    instance = this;
-  }
+    @FXML
+    private BorderPane borderPane;
 
-  /**
-   * Returns an instance of GuiView.
-   * 
-   * @return instance.
-   */
-  public static synchronized GuiView getInstance() {
-    if (instance == null) {
-      new Thread(() -> Application.launch(GuiView.class)).start();
+    @FXML
+    private Button calcButton;
 
-      while (instance == null) {
-      }
-    }
+    @FXML
+    private Label calculatorLabel;
 
-    return instance;
-  }
+    @FXML
+    private TextField inputField;
 
-  @Override
-  public void start(Stage primaryStage) throws IOException {
-    GridPane page = (GridPane) FXMLLoader.load(getClass().getClassLoader().getResource("View.fxml"));
-    Scene scene = new Scene(page);
-//    scene.getStylesheets().add(getClass().getResource("calculator.css").toExternalForm());
-    primaryStage.setScene(scene);
-    primaryStage.setTitle("Calculator");
-    primaryStage.show();
-  }
+    @FXML
+    private Label inputLabel;
 
-  /**
-   * Gets the user input.
-   * 
-   * @return The expression as a string.
-   */
-  public String getUserInput() {
-    return inputField.getText();
-  }
+    @FXML
+    private Pane mainPane;
 
-  /**
-   * Sets the result of the expression.
-   * 
-   * @param newTotal The result.
-   */
-  public void setTotal(String newTotal) {
-    totalField.setText(newTotal);
-  }
+    @FXML
+    private RadioButton postfixButton;
 
-  /**
-   * Enables the buttons.
-   */
-  public void menu() {
-    calcButton.setDisable(false);
-    resetButton.setDisable(false);
-  }
 
-@Override
-public String getExpression() {
-	// TODO Auto-generated method stub
-	return null;
-}
+	private static GuiView instance = null;
 
-@Override
-public void setAnswer(String str) {
-	// TODO Auto-generated method stub
-	
-}
+	@FXML
+	void initialize() {
+		instance = this;
+	}
 
-@Override
-public void addCalcObserver(Observer c) {
-	// TODO Auto-generated method stub
-	
-}
+	/**
+	 * Returns an instance of GuiView.
+	 * 
+	 * @return instance.
+	 */
+	public static synchronized GuiView getInstance() {
+		if (instance == null) {
+			GuiView.launch();;
+			while (instance == null) {
+			}
+		}
+		return instance;
+	}
 
-@Override
-public void addTypeObserver(Observer t) {
-	// TODO Auto-generated method stub
-	
-}
+	@Override
+	public void start(Stage primaryStage) throws IOException {
+		BorderPane pane = FXMLLoader.load(getClass().getClassLoader().getResource("View.fxml"));
+		Scene scene = new Scene(pane);
+        scene.getStylesheets().add(getClass().getResource("/calculator.css").toExternalForm());
+		primaryStage.setScene(scene);
+		primaryStage.setTitle("Calculator");
+		primaryStage.show();
+	}
 
-@Override
-public void addResetObserver(Observer r) {
-	// TODO Auto-generated method stub
-	
-}
+	/**
+	 * Gets the user input.
+	 * 
+	 * @return The expression as a string.
+	 */
+	public String getUserInput() {
+		return inputField.getText();
+	}
+
+	/**
+	 * Sets the result of the expression.
+	 * 
+	 * @param newTotal The result.
+	 */
+	public void setTotal(String newTotal) {
+		answerField.setText(newTotal);
+	}
+
+	/**
+	 * Enables the buttons.
+	 */
+	public void menu() {
+		calcButton.setDisable(false);
+	}
+
+	@Override
+	public String getExpression() {
+		return inputField.getText();
+	}
+
+	@Override
+	public void setAnswer(float num) {
+		this.answerField.setText(String.valueOf(num));
+	}
+
+	@Override
+	public void addCalcObserver(Observer c) {
+		calcButton.setOnAction(event -> c.notifyObservers());
+	}
+
+	@Override
+	public void addTypeObserver(Observer t) {
+		postfixButton.setOnAction(event -> t.notifyObservers());
+
+	}
+
+	@Override
+	public OpType retrieveOpType() {
+		if (postfixButton.isSelected()) {
+			return OpType.POSTFIX;
+		}
+		return OpType.INFIX;
+	}
 }

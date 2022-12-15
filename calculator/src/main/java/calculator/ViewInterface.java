@@ -1,7 +1,5 @@
 package calculator;
 
-import java.util.function.Consumer;
-
 /**
  * Interface for view classes.
  * 
@@ -21,7 +19,7 @@ public interface ViewInterface {
 	 * 
 	 * @param str The expression as a string.
 	 */
-	public void setAnswer(String str);
+	public void setAnswer(float num);
 
 	/**
 	 * Notified if a user has input an expression.
@@ -42,7 +40,6 @@ public interface ViewInterface {
 	 * 
 	 * @param r Instance of Observer.
 	 */
-	public void addResetObserver(Observer r);
 
 	/**
 	 * Menu.

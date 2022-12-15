@@ -7,7 +7,7 @@ package calculator;
  *
  */
 public enum OpType {
-  Infix(true), Postfix(false);
+  INFIX(true), POSTFIX(false);
 
   private boolean opType;
 

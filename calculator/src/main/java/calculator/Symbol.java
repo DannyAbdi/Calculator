@@ -4,7 +4,7 @@ package calculator;
  * This class declares and prints various symbols that will be used in the
  * calculator.
  * 
- * @author Danny
+ * @author danny
  *
  */
 public enum Symbol {

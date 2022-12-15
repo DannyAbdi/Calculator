@@ -4,7 +4,7 @@ package calculator;
  * This class creates a specific exception for Bad Types. A BadTypeException is
  * thrown when the type is not the expected one.
  * 
- * @author Danny
+ * @author danny
  *
  */
 public class BadTypeException extends Exception {

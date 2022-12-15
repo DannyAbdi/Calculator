@@ -30,7 +30,7 @@ public class CalcController {
 	public void calculate() {
 		String userInput = view.getExpression();
 		try {
-			model.evaluate(userInput, isInfix);
+			view.setAnswer(model.evaluate(userInput, isInfix));
 		} catch (InvalidExpressionException e) {
 			e.printStackTrace();
 		} catch (BadTypeException e) {

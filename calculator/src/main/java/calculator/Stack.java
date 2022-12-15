@@ -7,7 +7,7 @@ import java.util.EmptyStackException;
  * This program creates a stack and can add and remove entries stored in an
  * ArrayList.
  * 
- * @author Danny
+ * @author danny
  * 
  */
 public class Stack {

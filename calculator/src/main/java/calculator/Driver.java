@@ -1,15 +1,9 @@
 package calculator;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
 /**
- * Runs the application.
+ * Main class that runs the application.
  * 
- * @author danny
+ * @author Dave Cohen
  *
  */
 public class Driver {
@@ -20,14 +14,13 @@ public class Driver {
 	 * @param args Command line arguments as an array of String objects.
 	 */
 	public static void main(String[] args) {
-		ViewInterface view = GuiView.getInstance();
+		ViewInterface view = new AsciiView();
+		CalcModel model = new CalcModel();
+		if (System.console() == null) {
+			System.out.println("hello");
+			view = GuiView.getInstance();
+		}
+		new CalcController(model, view);
 		view.menu();
-	}
-
-	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("View.fxml"));
-		Scene scene = new Scene(root, 800, 500);
-		primaryStage.setScene(scene);
-		primaryStage.show();
 	}
 }

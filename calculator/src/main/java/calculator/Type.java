@@ -4,7 +4,7 @@ package calculator;
  * This class declares and prints various types that will be used in the
  * calculator.
  * 
- * @author Danny
+ * @author danny
  *
  */
 public enum Type {
